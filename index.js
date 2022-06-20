@@ -32,6 +32,7 @@ app.get('/', async (req, res) => {
       );
         const data = resp.data.results;
         // console.log(data);
+        res.send(data);
         console.log(data);
         // $("#reposneText").html(data[0].id); 
     } catch (error) {
