@@ -1,0 +1,19 @@
+{
+  "name": "node-heroku",
+  "version": "1.0.0",
+  "description": "Heroku Node API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Megh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1"
+  },
+  "engines": {
+    "node": "14.17.0"
+  }
+}
