@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
+let port = process.env.PORT || 3000;
 
 app.set('view engine', 'pug');
 
@@ -39,5 +40,5 @@ app.get('/', async (req, res) => {
 
 });
 
-app.listen(5000, () => console.log('Listening on http://localhost:5000'));
+app.listen(port, () => console.log('Listening on http://localhost:${port}'));
 
