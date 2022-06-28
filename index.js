@@ -23,7 +23,8 @@ app.get('/', async (req, res) => {
         {
           headers: {
             'Authorization': `Bearer pat-na1-f564da6d-b556-42d9-b280-d9e792fd9b98`,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
           }
         },
         (err, data) => {
