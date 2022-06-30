@@ -21,10 +21,12 @@ app.get('/', async (req, res) => {
     try {
         const resp = await axios.get('http://api.hubapi.com/cms/v3/hubdb/tables/team_table/rows',
         {
+          crossDomain : true,
           headers: {
             'Authorization': `Bearer pat-na1-f564da6d-b556-42d9-b280-d9e792fd9b98`,
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
           }
         },
         (err, data) => {
