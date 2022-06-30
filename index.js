@@ -19,7 +19,7 @@ app.get('/', async (req, res) => {
     // }
 
     try {
-        const resp = await axios.get('https://api.hubapi.com/cms/v3/hubdb/tables/team_table/rows',
+        const resp = await axios.get('http://api.hubapi.com/cms/v3/hubdb/tables/team_table/rows',
         {
           headers: {
             'Authorization': `Bearer pat-na1-f564da6d-b556-42d9-b280-d9e792fd9b98`,
